@@ -11,7 +11,8 @@
 
 body {
     font-family: Ruda-VariableFont, serif;
-    background: #f1f1f1
+    background: #f1f1f1;
+    overflow-x: hidden;
 }
 
 a {
@@ -208,5 +209,13 @@ nav > div {
     .circularTextContainer{
         width: 100px;
         height: 200px;
+    }
+
+    .open-call_container{
+        margin: auto;
+        justify-content: center;
+        max-width: 80%;
+        justify-content: center;
+        text-align: center;
     }
 }
