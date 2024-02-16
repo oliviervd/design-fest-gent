@@ -102,8 +102,21 @@ nav > div {
     }
 }
 
+.personal-space{
+    display: flex;
+    flex-flow: row;
+    padding: 0 30px;
+    & p {
+        padding-left: 20px;
+    }
+    & p:hover{
+        /*color: orange;*/
+    }
+}
+
 .circularTextContainer {
     position: relative;
+    background: orange;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -131,6 +144,9 @@ nav > div {
     }
 }
 
+.people_intro{
+    padding:0 30px ;
+}
 
 @media screen and (max-width: 700px)  {
     nav  {
@@ -147,5 +163,10 @@ nav > div {
 
     .main-title{
         width: 90%
+    }
+
+    .circularTextContainer{
+        width: 100px;
+        height: 200px;
     }
 }

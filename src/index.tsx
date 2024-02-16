@@ -4,6 +4,7 @@ import './style.css';
 import {useEffect, useState} from "preact/hooks";
 import Home from "./pages/home";
 import About from "./pages/about";
+import People from "./pages/people";
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
 		<Router>
 			<Home path={"/"}/>
 			<About path={"/about"} />
+			<People path={"/people"} />
 		</Router>
 	);
 }

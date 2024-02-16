@@ -30,7 +30,7 @@ const Header = (props) => {
                 <p className={"main-title_sub"}>{date[props.language]}</p>
             </div>
             <nav>
-                <h1>agents</h1>
+                <h1 onClick={()=>route("/people")}>people</h1>
                 <h1>reader</h1>
                 <h1 onClick={()=>route("/about")}>about</h1>
                 <div id={"lang"}>
