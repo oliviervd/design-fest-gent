@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import Footer from "../components/footer";
 import {useState} from "preact/hooks";
 import CircularText from "../components/circularText";
 const Home = () => {
@@ -17,6 +18,11 @@ const Home = () => {
             <div className={"hero_placeholder"}>
                 <CircularText text={"Gathering All The Small Things "} radius={200}/>
             </div>
+            <div className={"open-call_container"}>
+                <h1 className={"heavy"}>OPEN CALL</h1>
+                <h1>Designers in Residence Kortrijk 2024</h1>
+            </div>
+            <Footer/>
         </div>
     );
 

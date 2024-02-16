@@ -26,7 +26,7 @@ const Header = (props) => {
         <header>
             <h1 onClick={()=>route("/")}>Design Fest Gent</h1>
             <div>
-                <h1 className={"main-title"}>All The Small Things</h1>
+                <h1 onClick={()=>route("/")} className={"main-title"}>All The Small Things</h1>
                 <p className={"main-title_sub"}>{date[props.language]}</p>
             </div>
             <nav>

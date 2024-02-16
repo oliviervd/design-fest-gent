@@ -14,6 +14,15 @@ body {
     background: #f1f1f1
 }
 
+a {
+    color: orange;
+}
+
+h1 {
+    font-family: "Anthony", serif;
+    font-weight: 100;
+}
+
 header{
     font-family: "Anthony", serif;
     display: grid;
@@ -115,7 +124,7 @@ nav > div {
     display: flex;
     flex-flow: row;
     padding: 10px 30px;
-    width: 30px;
+    width: 60px;
     & p {
         padding-left: 20px;
     }
@@ -153,6 +162,27 @@ nav > div {
         transform: rotate(360deg);
     }
 }
+
+.open-call_container {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    max-width: 200px;
+    border: orange dotted 3px;
+    border-radius: 50%;
+    & h1 {
+        margin-top: 0;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-align: center;
+    }
+    & h1.heavy {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-weight: 900;
+    }
+}
+
 
 .people_intro{
     padding:0 30px ;

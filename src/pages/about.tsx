@@ -40,10 +40,17 @@ const About = () => {
     return (
         <div>
             <Header setLanguage={setLanguage} language={language}/>
-            <div class={"about"}>
-                <p dangerouslySetInnerHTML={{__html: about}}></p>
-                <p dangerouslySetInnerHTML={{__html: statement}}></p>
-            </div>
+            <section>
+                <div className={"about"}>
+                    <p dangerouslySetInnerHTML={{__html: about}}></p>
+                    <p dangerouslySetInnerHTML={{__html: statement}}></p>
+                </div>
+            </section>
+            <section>
+                <div className={"partners_container"}>
+                    <h1 className={"about"}>partners</h1>
+                </div>
+            </section>
         </div>
     );
 }
