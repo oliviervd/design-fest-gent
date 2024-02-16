@@ -167,7 +167,7 @@ nav > div {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    max-width: 200px;
+    max-width: 250px;
     border: orange dotted 3px;
     border-radius: 50%;
     & h1 {
