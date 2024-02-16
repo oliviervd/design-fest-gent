@@ -30,6 +30,14 @@ header > div {
     gap: 0;
 }
 
+.hidden {
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
 .main-title{
     font-family: "Anthony", serif;
     text-align: center;
@@ -103,9 +111,11 @@ nav > div {
 }
 
 .personal-space{
+    position: relative;
     display: flex;
     flex-flow: row;
-    padding: 0 30px;
+    padding: 10px 30px;
+    width: 30px;
     & p {
         padding-left: 20px;
     }

@@ -20,12 +20,13 @@ const People = () => {
         <div>
             <Header/>
             <p className={"people_intro"}>gathering many people doing small things...</p>
-            {people.map((p)=>{
+            {people.map((p, index)=>{
                 let name = p.firstName + " " + p.familyName
+                const [isHovered, setIsHovered] = useState(false); // Local state to manage hover
                 return(
-                    <div className={"personal-space"}>
-                       <CircularText text={p.firstName} radius={20}/>
-                        <p>{name}</p>
+                    <div key={index} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className={"personal-space"}>
+                        <CircularText text={p.firstName} radius={20}/>
+                        <p className={isHovered ? "visible" : "hidden"}>{name}</p>
                     </div>
                 )
             })}
