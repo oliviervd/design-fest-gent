@@ -7,6 +7,8 @@ const Header = () => {
                 <p className={"main-title_sub"}>March 20-30, 2025</p>
             </div>
             <nav>
+                <h1>agents</h1>
+                <h1>reader</h1>
                 <h1>about</h1>
                 <div>
                     <h1>NL</h1>
