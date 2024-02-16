@@ -33,9 +33,9 @@ header > div {
 .main-title{
     font-family: "Anthony", serif;
     text-align: center;
-    border: orange 2px dotted;
+   /*border: orange 2px dotted;*/
     border-radius: 90%;
-    width: 50%;
+    min-width: 100px;
     margin: 20px auto;
     margin-bottom: 0;
 }
@@ -62,4 +62,47 @@ nav > div {
     display: flex;
     flex-flow: row;
     gap: 10px;
+
+    & h1 {
+        padding: 0 10px;
+    }
+}
+
+.selected {
+    background: orange;
+    border: blanchedalmond 1px solid;
+    border-radius: 50%;
+}
+
+.selected:hover {
+    color: black;
+}
+
+.about{
+    justify-content: center;
+    text-align: center;
+    padding: 30px 30px;
+    margin: auto;
+    max-width: 900px;
+    & p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 700px)  {
+    nav  {
+        display: none;
+    }
+    
+    header > h1 {
+        display: none;
+    }
+    
+    header {
+        display: block;
+    }
+
+    .main-title{
+        width: 90%
+    }
 }
