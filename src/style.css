@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Ruda-VariableFont";
+    src: local("Ruda-VariableFont"), url("./assets/fonts/Ruda-VariableFont_wght.ttf")
+}
+
+@font-face {
+    font-family: "Anthony";
+    src: local("Anthony"), url("./assets/fonts/Anthony.woff2") format("woff")
+}
+
+
+body {
+    font-family: Ruda-VariableFont, serif;
+    background: #f1f1f1
+}
+
+header{
+    font-family: "Anthony", serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+    & h1 {
+        font-weight: 100;
+    }
+}
+
+header > div {
+    display: flex;
+    flex-flow: column;
+    gap: 0;
+}
+
+.main-title{
+    font-family: "Anthony", serif;
+    text-align: center;
+    border: orange 2px dotted;
+    border-radius: 90%;
+    width: 50%;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+.main-title_sub {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+    gap: 20px;
+
+    & h1:hover {
+        color: orange;
+    }
+}
+
+
+nav > div {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
