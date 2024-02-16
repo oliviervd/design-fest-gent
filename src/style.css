@@ -89,6 +89,49 @@ nav > div {
     }
 }
 
+.hero_placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateY(-50%) translateX(-50%);
+    text-align: center;
+    background: orange;
+    border-radius: 100%;
+    & p{
+       font-size: 2em;
+    }
+}
+
+.circularTextContainer {
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateText 20s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+.circularTextContainer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+    width: 10px; /* Adjust based on the size of the text */
+    height: 10px; /* Adjust based on the size of the text */
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
 @media screen and (max-width: 700px)  {
     nav  {
         display: none;
