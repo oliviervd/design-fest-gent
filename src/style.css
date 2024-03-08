@@ -86,6 +86,14 @@ nav > div {
     }
 }
 
+.inactive {
+    color: darkgrey;
+}
+
+.inactive:hover{
+    color: darkgrey;
+}
+
 .selected {
     background: orange;
     border: blanchedalmond 1px solid;

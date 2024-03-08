@@ -6,6 +6,7 @@ const About = () => {
     const [about, setAbout] = useState([])
     const [statement, setStatement] = useState([])
     const [language, setLanguage] = useState("en")
+    const [sponsors, setSponsors] = useState([])
 
     console.log(language)
 
@@ -13,7 +14,8 @@ const About = () => {
     const baseURI:string = "https://p01--admin-cms--qbt6mytl828m.code.run";
     // fetch data
     useEffect(() => {
-        fetchPayload(baseURI, "texts", 10, language).then((data)=>{
+        // texts
+        fetchPayload(baseURI, "texts", 10, language).then((data)=> {
             const _unserializedText = data["docs"]
             for (let i = 0; i < data["docs"].length; i++) {
                 if (data["docs"][i]["id"]=="about_fest") {
@@ -33,9 +35,16 @@ const About = () => {
                     setStatement(_serializedText);
                 }
             }
-
         })
     }, [language]);
+
+    useEffect(() => {
+        // logos
+        fetchPayload(baseURI, "partners", 10, language).then((data) => {
+            //console.log(data)
+            setSponsors(data);
+        })
+    }, []);
 
     return (
         <div>

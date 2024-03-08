@@ -31,7 +31,7 @@ const Header = (props) => {
             </div>
             <nav>
                 <h1 onClick={()=>route("/people")}>people</h1>
-                <h1>reader</h1>
+                <h1 className={"inactive"}>reader</h1>
                 <h1 onClick={()=>route("/about")}>about</h1>
                 <div id={"lang"}>
                     <h1 onClick={()=> select("nl") } id={"nl"}>nl</h1>
