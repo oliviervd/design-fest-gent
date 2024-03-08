@@ -69,10 +69,6 @@ nav {
     flex-flow: row;
     justify-content: end;
     gap: 20px;
-
-    & h1:hover {
-        color: orange;
-    }
 }
 
 
@@ -92,6 +88,10 @@ nav > div {
 
 .inactive:hover{
     color: darkgrey;
+}
+
+.clickable:hover {
+    color: orange;
 }
 
 .selected {

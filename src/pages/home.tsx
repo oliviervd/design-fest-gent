@@ -18,9 +18,9 @@ const Home = () => {
             <div className={"hero_placeholder"}>
                 <CircularText text={"Gathering All The Small Things "} radius={200}/>
             </div>
-            <div className={"open-call_container"}>
+            <div className={"open-call_container clickable"}>
                 <h1 className={"heavy"}>OPEN CALL</h1>
-                <h1>Designers in Residence Kortrijk 2024</h1>
+                <h1 className={""}>Designers in Residence Kortrijk 2024</h1>
             </div>
             <Footer/>
         </div>

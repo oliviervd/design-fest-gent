@@ -30,13 +30,13 @@ const Header = (props) => {
                 <p className={"main-title_sub"}>{date[props.language]}</p>
             </div>
             <nav>
-                <h1 onClick={()=>route("/people")}>people</h1>
+                <h1 className={"clickable"} onClick={()=>route("/people")}>people</h1>
                 <h1 className={"inactive"}>reader</h1>
-                <h1 onClick={()=>route("/about")}>about</h1>
+                <h1 className={"clickable"} onClick={()=>route("/about")}>about</h1>
                 <div id={"lang"}>
-                    <h1 onClick={()=> select("nl") } id={"nl"}>nl</h1>
-                    <h1 onClick={()=> select("en") } id={"en"} className={"selected"}>en</h1>
-                    <h1 onClick={()=> select("fr") } id={"fr"}>fr</h1>
+                    <h1 className={"clickable"} onClick={()=> select("nl") } id={"nl"}>nl</h1>
+                    <h1 className={"clickable selected"} onClick={()=> select("en") } id={"en"}>en</h1>
+                    <h1 className={"clickable"} onClick={()=> select("fr") } id={"fr"}>fr</h1>
                 </div>
             </nav>
         </header>
